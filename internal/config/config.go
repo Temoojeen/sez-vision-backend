@@ -28,7 +28,7 @@ func LoadConfig() *Config {
 		DBName:     getEnv("DB_NAME", "service_desk"),
 		SSLMode:    getEnv("SSL_MODE", "disable"),
 
-		ServerPort: getEnv("SERVER_PORT", ":8080"),
+		ServerPort: getEnv("SERVER_PORT", ":8081"),
 		JWTSecret:  getEnv("JWT_SECRET", "your-super-secret-jwt-key-change-this-in-production"),
 		JWTTTL:     parseDuration(getEnv("JWT_TTL_HOURS", "24")),
 	}
