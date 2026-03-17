@@ -4,21 +4,24 @@
 *.dll
 *.so
 *.dylib
-
-# Test binaries
 *.test
+*.out
 
-# Output of go build
-bin/
-build/
-
-# Vendor directory
+# Dependency directories (если используешь vendor)
 vendor/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-
-# Env files
+# Environment variables
 .env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
